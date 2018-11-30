@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypher Marketing</title>
+    @Styles.Render("~/bundles/css")
+    @Styles.Render("~/bundles/jquery")
+    @Styles.Render("~/bundles/jqueryval")
+</head>
+<body>
+    <div id="wrapper">
+            @Html.Partial("_Nav")
+        <!-- Begin Page Wrapper -->
+        <div id="page-wrapper">
+            @RenderBody()
+        </div>
+        <!-- End Page Wrapper -->
+    </div>
+    @*@RenderSection("Scripts", required:false) ---> to have the scripts loaded only for the views that require it*@
+</body>
+</html>
